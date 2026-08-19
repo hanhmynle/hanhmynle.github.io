@@ -1,0 +1,155 @@
+/* ---- Site-wide styling: simple & elegant, warm orange-brown palette ---- */
+
+:root {
+  --text: #3a2a1e;       /* deep warm brown, body text */
+  --muted: #8a7461;      /* soft taupe, secondary text */
+  --accent: #a4601c;     /* warmer, more orange brown, links */
+  --accent-hover: #7a4519;
+  --bg: #ffffff;         /* pure white */
+  --border: #e6dac8;     /* soft warm tan */
+  --max-width: 680px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 20px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 0 90px;
+}
+
+header.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 56px;
+}
+
+h1 {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px;
+  color: var(--text);
+}
+
+h2 {
+  font-family: "Lora", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  margin-top: 2.4rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  color: var(--text);
+}
+
+h3 {
+  font-family: "Lora", Georgia, serif;
+  font-size: 0.82rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--muted);
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin: 0 0 20px;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+nav.site-nav {
+  margin: 18px 0 10px;
+}
+
+nav.site-nav a {
+  margin-right: 18px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+nav.site-nav a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.6em;
+}
+
+.contact-links a {
+  margin-right: 14px;
+}
+
+.project, .pub-entry {
+  margin-bottom: 22px;
+}
+
+.project h3, .pub-entry h3 {
+  font-family: "Lora", Georgia, serif;
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 6px;
+  font-style: italic;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1px 9px;
+  margin: 2px 6px 2px 0;
+}
+
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 0 40px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}

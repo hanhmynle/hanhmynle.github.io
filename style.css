@@ -3,8 +3,8 @@
 :root {
   --text: #263a4d;       /* deep muted navy, body text */
   --muted: #7c8fa3;      /* soft blue-grey, secondary text */
-  --accent: #4a7a9d;     /* calm steel blue, links */
-  --accent-hover: #345a78;
+  --accent: #1f7ec2;     /* bright, sharper blue, links */
+  --accent-hover: #15618f;
   --bg: #ffffff;         /* pure white */
   --border: #dde6ee;     /* soft pale blue-grey */
   --max-width: 680px;

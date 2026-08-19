@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanh My Le</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Hanh My Le</h1>
+  </header>
+  <main>
+    <!-- 1. Intro — no heading -->
+    <p>
+      I am a doctoral researcher at Technische Universität Braunschweig. My main research fields are Development Economics, Environmental Economics, and Political Economy.
+    </p>
+    <!-- 2. CV link — no heading -->
+    <p><a href="cv.pdf" target="_blank" rel="noopener">CV</a></p>
+    <!-- 3. Research — heading + three subsections -->
+    <h2>Research</h2>
+
+    <h3>Accepted Papers and Publications</h3>
+    <ul>
+      <li><a href="#" target="_blank" rel="noopener">"Accepted Paper Title One"</a>, Journal Name (Year)</li>
+      <li><a href="#" target="_blank" rel="noopener">"Accepted Paper Title Two"</a>, Journal Name (Year)</li>
+    </ul>
+
+    <h3>Working Papers</h3>
+    <ul>
+      <li><a href="papers/paper-one.pdf" target="_blank" rel="noopener">"Working Paper Title One"</a> (Year)</li>
+      <li><a href="papers/paper-two.pdf" target="_blank" rel="noopener">"Working Paper Title Two"</a> (Year)</li>
+      <li><a href="papers/paper-three.pdf" target="_blank" rel="noopener">"Working Paper Title Three"</a> (Year)</li>
+    </ul>
+
+    <h3>Work in Progress</h3>
+    <ul>
+      <li>"Work in Progress Title One"</li>
+      <li>"Work in Progress Title Two"</li>
+    </ul>
+  </main>
+  <footer>
+    &copy; <span id="year"></span> Hanh My Le
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

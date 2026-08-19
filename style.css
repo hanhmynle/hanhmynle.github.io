@@ -1,12 +1,12 @@
-/* ---- Site-wide styling: simple & elegant, warm orange-brown palette ---- */
+/* ---- Site-wide styling: simple & elegant, light peaceful blue palette ---- */
 
 :root {
-  --text: #3a2a1e;       /* deep warm brown, body text */
-  --muted: #8a7461;      /* soft taupe, secondary text */
-  --accent: #a4601c;     /* warmer, more orange brown, links */
-  --accent-hover: #7a4519;
+  --text: #263a4d;       /* deep muted navy, body text */
+  --muted: #7c8fa3;      /* soft blue-grey, secondary text */
+  --accent: #4a7a9d;     /* calm steel blue, links */
+  --accent-hover: #345a78;
   --bg: #ffffff;         /* pure white */
-  --border: #e6dac8;     /* soft warm tan */
+  --border: #dde6ee;     /* soft pale blue-grey */
   --max-width: 680px;
 }
 

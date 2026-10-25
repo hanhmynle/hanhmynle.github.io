@@ -45,8 +45,8 @@ header.site-header {
 }
 
 .profile-photo {
-  width: 125px;
-  height: 125px;
+  width: 122px;
+  height: 122px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);

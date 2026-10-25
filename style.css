@@ -45,8 +45,8 @@ header.site-header {
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
@@ -61,7 +61,7 @@ h1 {
   margin: 0 0 4px;
   color: var(--text);
 }
-
+ 
 h2 {
   font-family: "Lora", Georgia, serif;
   font-weight: 600;
@@ -73,7 +73,7 @@ h2 {
   padding-bottom: 8px;
   color: var(--text);
 }
-
+ 
 h3 {
   font-family: "Lora", Georgia, serif;
   font-size: 0.82rem;
@@ -83,6 +83,18 @@ h3 {
   color: var(--text);
   margin-top: 1.8rem;
   margin-bottom: 0.6rem;
+}
+ 
+/* Extra breathing room between a section heading (e.g. "Research")
+   and the first subsection right under it (e.g. "Accepted Paper") */
+h2 + h3 {
+  margin-top: 2.6rem;
+}
+ 
+/* Extra breathing room between one subsection's paper list and the
+   next subsection heading (e.g. before "Working Papers", "Work in Progress") */
+ul + h3 {
+  margin-top: 2.6rem;
 }
 
 .subtitle {

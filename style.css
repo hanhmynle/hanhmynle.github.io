@@ -38,6 +38,21 @@ header.site-header {
   padding-top: 56px;
 }
 
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+
 h1 {
   font-family: "Lora", Georgia, serif;
   font-weight: 600;
@@ -65,7 +80,7 @@ h3 {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.7px;
-  color: var(--muted);
+  color: var(--text);
   margin-top: 1.8rem;
   margin-bottom: 0.6rem;
 }
@@ -160,13 +175,21 @@ li {
 }
 
 .paper-meta {
-  color: var(--muted);
+  color: var(--text);
   font-size: 0.92rem;
   margin: 0 0 0.4rem;
   line-height: 1.5;
 }
 
 .paper-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 0.3rem;
+}
+
+.paper-links {
   display: flex;
   align-items: center;
   gap: 0.8rem;
@@ -195,11 +218,7 @@ li {
 }
 
 .paper-abstract {
-  margin-top: 0.8rem;
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--panel);
+  margin-top: 0.6rem;
   color: var(--text);
 }
 

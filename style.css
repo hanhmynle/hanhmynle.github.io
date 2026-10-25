@@ -1,155 +1,126 @@
-/* ---- Site-wide styling: simple & elegant, light peaceful blue palette ---- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanh My Le</title>
 
-:root {
-  --text: #263a4d;       /* deep muted navy, body text */
-  --muted: #7c8fa3;      /* soft blue-grey, secondary text */
-  --accent: #1f7ec2;     /* bright, sharper blue, links */
-  --accent-hover: #15618f;
-  --bg: #ffffff;         /* pure white */
-  --border: #dde6ee;     /* soft pale blue-grey */
-  --max-width: 680px;
-}
+  <!-- SEO: author and description shown in search results -->
+  <meta name="author" content="Hanh My Le">
+  <meta name="description" content="Hanh My Le is a postdoctoral researcher at Technische Universität Braunschweig, working on Development Economics, Environmental Economics, and Political Economy.">
+  <link rel="canonical" href="https://hanhmynle.github.io/">
 
-* {
-  box-sizing: border-box;
-}
+  <!-- Social/link previews (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hanh My Le">
+  <meta property="og:description" content="Postdoctoral researcher at Technische Universität Braunschweig — Development Economics, Environmental Economics, Political Economy.">
+  <meta property="og:url" content="https://hanhmynle.github.io/">
 
-body {
-  margin: 0;
-  padding: 0 20px;
-  background: var(--bg);
-  color: var(--text);
-  font-family: "Lora", Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-}
+  <!-- Social/link previews (Twitter/X) -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hanh My Le">
+  <meta name="twitter:description" content="Postdoctoral researcher at Technische Universität Braunschweig — Development Economics, Environmental Economics, Political Economy.">
 
-main {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 40px 0 90px;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Hanh My Le</h1>
+  </header>
+  <main>
+    <!-- 1. Intro — no heading -->
+    <p>I am a postdoctoral researcher in Economics at Technische Universität Braunschweig, where I also received my PhD in September 2026. </p>
+    <p> My main research fields are Development Economics, Environmental Economics, and Political Economy.</p>
+    <!-- 2. CV link — no heading -->
+    <p>View my <a href="CVHanhMyLe.pdf" target="_blank" rel="noopener">CV</a></p>
 
-header.site-header {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding-top: 56px;
-}
+    <!-- 3. Research — heading + three subsections -->
+    <h2>Research</h2>
 
-h1 {
-  font-family: "Lora", Georgia, serif;
-  font-weight: 600;
-  font-size: 2rem;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px;
-  color: var(--text);
-}
+    <h3>Accepted Paper</h3>
+    <ul class="paper-list">
+      <li class="paper-entry">
+        <div class="paper-title">"Salinization and Development", with Markus Ludwig</div>
+        <div class="paper-meta">Accepted at the Journal of the European Economic Association</div>
+        <div class="paper-actions">
+          <a href="papers/Salinization26.pdf" target="_blank" rel="noopener">Paper</a>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+        </div>
+        <div class="paper-abstract" hidden>
+          <p>Abstract: This paper studies how soil salinization affects long-run economic development by reducing agricultural productivity and increasing exposure to climate-related shocks. Using a combination of historical and spatial evidence, it shows that areas with higher salinity exhibit lower economic performance, weaker investment, and slower development over time.</p>
+        </div>
+      </li>
+    </ul>
 
-h2 {
-  font-family: "Lora", Georgia, serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: 0.3px;
-  margin-top: 2.4rem;
-  margin-bottom: 0.8rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 8px;
-  color: var(--text);
-}
+    <h3>Working Papers</h3>
+    <ul class="paper-list">
+      <li class="paper-entry">
+        <div class="paper-title">"Geopolitical distance and high seas fishing", with Thomas Schiller</div>
+        <div class="paper-actions">
+          <a href="papers/HSF26.pdf" target="_blank" rel="noopener">Current version</a>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+        </div>
+        <div class="paper-abstract" hidden>
+          <p>Abstract: This project examines how geopolitical distance shapes behavior and resource extraction in high seas fisheries. It analyzes how cross-border political relationships affect fishing effort, market participation, and the governance of shared marine resources.</p>
+        </div>
+      </li>
 
-h3 {
-  font-family: "Lora", Georgia, serif;
-  font-size: 0.82rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  color: var(--muted);
-  margin-top: 1.8rem;
-  margin-bottom: 0.6rem;
-}
+      <li class="paper-entry">
+        <div class="paper-title">"Gender bias in the aftermath of fraud: Evidence from the Theranos case", with Matthias Flückiger, Jonas Klärchen, and Markus Ludwig</div>
+        <div class="paper-actions">
+          <button class="abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+        </div>
+        <div class="paper-abstract" hidden>
+          <p>Abstract: This paper studies whether fraud shocks alter patterns of gender bias in public attention and professional evaluation. Using the Theranos case as a setting, it documents how the aftermath of scandal changes perceived credibility and opportunity across gender groups.</p>
+        </div>
+      </li>
+    </ul>
 
-.subtitle {
-  color: var(--muted);
-  margin: 0 0 20px;
-  font-size: 1.05rem;
-  font-style: italic;
-}
+    <h3>Work in Progress</h3>
+    <ul class="paper-list">
+      <li class="paper-entry">
+        <div class="paper-title">"Fishing incursion, development, and health"</div>
+        <div class="paper-actions">
+          <button class="abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+        </div>
+        <div class="paper-abstract" hidden>
+          <p>Abstract: This project investigates how fishing incursions affect local development and health outcomes. It considers the interaction between resource extraction, institutional responses, and household welfare in coastal communities.</p>
+        </div>
+      </li>
 
-nav.site-nav {
-  margin: 18px 0 10px;
-}
+      <li class="paper-entry">
+        <div class="paper-title">"Diffusion of disruptive technologies in life sciences", with Markus Ludwig</div>
+        <div class="paper-actions">
+          <button class="abstract-toggle" type="button" aria-expanded="false">Abstract</button>
+        </div>
+        <div class="paper-abstract" hidden>
+          <p>Abstract: This paper explores how disruptive technologies spread across the life sciences and what factors shape their adoption. It combines evidence on innovation, institutional settings, and scientific collaboration to explain differences in diffusion patterns.</p>
+        </div>
+      </li>
+    </ul>
+  </main>
 
-nav.site-nav a {
-  margin-right: 18px;
-  text-decoration: none;
-  color: var(--accent);
-  font-weight: 600;
-}
+  <footer>
+    &copy; <span id="year"></span> Hanh My Le
+  </footer>
 
-nav.site-nav a:hover {
-  color: var(--accent-hover);
-  text-decoration: underline;
-}
+  <script>
+    document.querySelectorAll('.abstract-toggle').forEach((button) => {
+      const paperEntry = button.closest('.paper-entry');
+      const abstract = paperEntry.querySelector('.paper-abstract');
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.15s ease, color 0.15s ease;
-}
+      button.addEventListener('click', () => {
+        const isHidden = abstract.hasAttribute('hidden');
+        abstract.toggleAttribute('hidden', !isHidden);
+        button.setAttribute('aria-expanded', String(isHidden));
+        button.textContent = isHidden ? 'Hide Abstract' : 'Abstract';
+      });
+    });
 
-a:hover {
-  color: var(--accent-hover);
-  border-bottom-color: var(--accent-hover);
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-li {
-  margin-bottom: 0.6em;
-}
-
-.contact-links a {
-  margin-right: 14px;
-}
-
-.project, .pub-entry {
-  margin-bottom: 22px;
-}
-
-.project h3, .pub-entry h3 {
-  font-family: "Lora", Georgia, serif;
-  margin: 0 0 4px;
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
-.meta {
-  color: var(--muted);
-  font-size: 0.92rem;
-  margin: 0 0 6px;
-  font-style: italic;
-}
-
-.tag {
-  display: inline-block;
-  font-size: 0.78rem;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1px 9px;
-  margin: 2px 6px 2px 0;
-}
-
-footer {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 24px 0 40px;
-  color: var(--muted);
-  font-size: 0.85rem;
-  border-top: 1px solid var(--border);
-}
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

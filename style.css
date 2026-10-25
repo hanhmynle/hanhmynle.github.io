@@ -191,7 +191,8 @@ li {
 .paper-links {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
+  font-size: 0.92rem;
   flex-wrap: wrap;
 }
 

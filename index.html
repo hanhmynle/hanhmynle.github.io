@@ -79,20 +79,21 @@ participation and may reflect shifts in opportunity costs, though we cannot rule
         <div class="paper-actions">
           <button class="abstract-toggle" type="button" aria-expanded="false">Abstract</button>
           <div class="paper-links">
-            <a href="papers/HSF26.pdf" target="_blank" rel="noopener">Working paper</a>
+            <a href="papers/HSFNov26.pdf" target="_blank" rel="noopener">Working paper</a>
           </div>
         </div>
         <div class="paper-abstract" hidden>
-          <p>To what extent is resource use in transboundary commons driven not only by economic incentives but also by
-geopolitical motives? We extend the Gordon-Schaefer fisheries model to include political payoffs and show that
-these can sustain resource use even under negative economic returns. We test the framework on the Chinese
-distant-water fishing fleet, the world’s largest, by examining its activity on the high seas just outside foreign
-exclusive economic zones. Holding economic incentives constant, the likelihood of Chinese fleet presence or
-fishing rises with the UN General Assembly voting-based political distance between China and the coastal
-host country. These estimates are unlikely to reflect reverse causation or omitted confounders. The pattern is
-broadly consistent with surveillance as the main motive: the effect is concentrated in small fleets of vessels with
-untraceable ownership, no seasonal fishing pattern, and a tendency to cluster near submarine cables and NATO
-military installations.</p>
+          <p>To what extent is resource use in transboundary commons driven not only by economic
+incentives but also by geopolitical ones? We extend the Gordon-Schaefer fisheries model
+to include political payoffs and show that these can sustain resource extraction even
+under negative economic returns. We test the framework on the Chinese distant-water
+fishing fleet, the world’s largest, by examining its activity on the high seas just outside
+foreign exclusive economic zones. Holding economic incentives constant, the probability
+of Chinese fleet presence or fishing rises with the UN General Assembly voting-based
+political distance between China and the coastal host country. The pattern is consistent
+with surveillance as the main motive: the effect is concentrated in small fleets of vessels
+with untraceable ownership that, rather than prioritizing economic incentives, have a
+tendency to cluster near submarine cables and NATO military installations.</p>
         </div>
       </li>
 
@@ -135,11 +136,9 @@ decline.</p>
         const isHidden = abstract.hasAttribute('hidden');
         abstract.toggleAttribute('hidden', !isHidden);
         button.setAttribute('aria-expanded', String(isHidden));
-        button.textContent = isHidden ? 'Hide Abstract' : 'Abstract';
       });
     });
 
-    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
